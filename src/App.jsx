@@ -1,15 +1,16 @@
-import Banner from "./Components/Banner"
-import Header from "./Components/Header"
-import Footer from "./Components/Footer"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Homepage from "./Pages/Homepage";
 
 function App() {
   
 
   return (
     <>
-      <Header/>
-      <Banner/>
-      <Footer/>
+    <BrowserRouter>
+      <Routes>
+          <Route path="/" element={<Homepage />} />
+      </Routes>
+    </BrowserRouter>
     </>
   )
 }
