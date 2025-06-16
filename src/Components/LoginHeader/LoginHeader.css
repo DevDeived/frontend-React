@@ -1,16 +1,17 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
-img{
-    width:20vw;
-}
+
 #headerLogin{
     width: 100vw;
     height: 15vh;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    margin-left: 5vw;
+    padding-left: 4vw;
+}
+
+#headerLogin img {
+    width: 15vw;
 }

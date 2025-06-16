@@ -1,4 +1,6 @@
-import Logo from "../assets/logo.png"
+import Logo from "../../assets/logo.png"
+import "./LoginHeader.css"
+
 function LoginHeader() {
   
   return (

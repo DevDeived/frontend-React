@@ -1,4 +1,4 @@
-import Banner from "../Components/Banner"
+
 import Footer from "../Components/Footer"
 import Header from "../Components/Header"
 
@@ -7,7 +7,6 @@ function Homepage() {
   return (
     <>
         <Header/>
-        <Banner/>
         <Footer/>
     </>
   )
