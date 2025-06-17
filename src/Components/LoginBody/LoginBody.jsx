@@ -8,11 +8,11 @@ function LoginBody() {
     <>
       <section id="loginBody">
         <div id="loginForm">
-          <div>
+          <div id="loginTitles">
             <h1>Acesse sua conta</h1>
             <p>Novo cliente ? Então registre-se <a href="">aqui</a></p>
           </div>
-          <div>
+          <div id="inputsLoginForm">
             <label htmlFor="">Login *</label>
             <input type="email" placeholder="Insira seu login ou email" />
 
@@ -23,15 +23,15 @@ function LoginBody() {
 
             <button>Acessar conta</button>
 
-            <div>
+            <div id="formRedirection">
               <p>Ou faça login com</p>
               <img src={Redirections} alt="" />
             </div>
           </div>
         </div>
         <div id="loginBodyTenis">
-            <img src={Tenis1} alt="" />
-            <img src={Tenis2} alt="" />
+          <img src={Tenis1} alt="" />
+          <img src={Tenis2} alt="" />
         </div>
       </section>
     </>
