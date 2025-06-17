@@ -1,12 +1,13 @@
 import Redirections from "../../assets/redirections.png"
 import Tenis1 from "../../assets/tenis1.png"
 import Tenis2 from "../../assets/tenis2.png"
+import "./LoginBody.css"
 function LoginBody() {
 
   return (
     <>
       <section id="loginBody">
-        <div>
+        <div id="loginForm">
           <div>
             <h1>Acesse sua conta</h1>
             <p>Novo cliente ? Então registre-se <a href="">aqui</a></p>
@@ -28,7 +29,7 @@ function LoginBody() {
             </div>
           </div>
         </div>
-        <div>
+        <div id="loginBodyTenis">
             <img src={Tenis1} alt="" />
             <img src={Tenis2} alt="" />
         </div>

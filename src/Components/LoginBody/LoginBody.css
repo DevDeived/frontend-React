@@ -1,0 +1,26 @@
+*{
+    overflow-x: hidden;
+}
+
+#loginBody{
+    background-color: #bdbef4;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10vw;
+}
+
+#loginBodyTenis img{
+    width: 20vw;
+    
+}
+#loginForm{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    width: 30vw;
+    height: 70vh;
+}
