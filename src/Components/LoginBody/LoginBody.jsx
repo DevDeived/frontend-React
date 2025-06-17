@@ -1,4 +1,6 @@
-
+import Redirections from "../../assets/redirections.png"
+import Tenis1 from "../../assets/tenis1.png"
+import Tenis2 from "../../assets/tenis2.png"
 function LoginBody() {
 
   return (
@@ -14,11 +16,21 @@ function LoginBody() {
             <input type="email" placeholder="Insira seu login ou email" />
 
             <label htmlFor="">Senha *</label>
-            <input type="password" placeholder="Insira sua senha" />
+            <input type="password" placeholder="Insira sua senha" />´
+
+            <a href="">Esqueci minha senha</a>
+
+            <button>Acessar conta</button>
+
+            <div>
+              <p>Ou faça login com</p>
+              <img src={Redirections} alt="" />
+            </div>
           </div>
         </div>
         <div>
-
+            <img src={Tenis1} alt="" />
+            <img src={Tenis2} alt="" />
         </div>
       </section>
     </>
