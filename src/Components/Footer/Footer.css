@@ -1,0 +1,168 @@
+
+#footer {
+  color: white;
+  background-color: #1f1f1f;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10vh 7vw 3vh 7vw;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+}
+ul {
+  margin-top: 2rem;
+}
+li {
+  margin-bottom: 0.8rem;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+}
+
+#info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding-bottom: 4vh;
+}
+
+#sobre {
+  display: flex;
+  flex-direction: column;
+  width: 26vw;
+  gap: 6vh;
+  font-weight: 200;
+}
+
+#logo {
+  width: 240px;
+}
+
+#sobre p {
+  width: 22vw;
+}
+
+#redes {
+  width: 124px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin: 0 0 0 -5px;
+}
+
+#redes a {
+  width: 21px;
+  height: 21px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+#redes a:nth-child(1) {
+  background-image: url("../../assets/facebook.svg");
+}
+
+#redes a:nth-child(2) {
+  background-image: url("../../assets/instagram.svg");
+}
+
+#redes a:nth-child(3) {
+  background-image: url("../../assets/twitter.svg");
+}
+
+#redes a:hover {
+  filter: brightness(50%);
+}
+
+#links {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 8vw;
+}
+
+#links a:hover {
+  color: #808080;
+}
+
+#links p,
+#contato p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#contato {
+  width: 14vw;
+  gap: 16px;
+}
+
+#rights {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3vh;
+  font-size: 1rem;
+}
+
+#rights img {
+  width: 86vw;
+}
+
+#rights p {
+  font-size: 13px;
+}
+
+@media (min-width: 344px) and (max-width: 970px) {
+  #footer {
+    justify-content: center;
+    align-items: start;
+    padding: 7vh 5vw 3vh 5vw;
+  }
+  #info {
+    flex-direction: column;
+    gap: 6vh;
+  }
+  #sobre {
+    width: 50vw;
+    gap: 4vh;
+  }
+  #sobre p {
+    font-size: 14px;
+    width: 100%;
+  }
+  ul {
+    margin-top: 0.5rem;
+  }
+  li {
+    margin-bottom: 0.5rem;
+  }
+  #logo {
+    width: 170px;
+  }
+  #links {
+    width: 75vw;
+    gap: 8vw;
+    justify-content: start;
+  }
+  #links p {
+    padding-bottom: 10px;
+  }
+
+  #contato {
+    width: 50vw;
+  }
+  #contato ul li:nth-child(1) {
+    margin-bottom: 5vh;
+  }
+  #rights img {
+    width: 87vw;
+  }
+}
