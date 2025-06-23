@@ -1,0 +1,33 @@
+.layoutProdutos {
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+  background: #f8f6ff;
+}
+
+.filtros {
+  width: 240px;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  font-family: sans-serif;
+}
+
+.filtros h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.filtro {
+  margin-bottom: 1.5rem;
+}
+
+.filtro strong {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.filtro label {
+  display: block;
+  margin-bottom: 0.3rem;
+}
