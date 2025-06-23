@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  overflow-x: hidden ;
+  font-family: "Inter", sans-serif;
+}
+
+#colecao {
+  width: 100%;
+  height: 55vh;
+  background-color: #fbfaff;
+}
+#colecao h1{
+  color: #474747;
+  padding-left: 7vw;
+  margin-bottom: 3vh;
+}
+#colecao div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+}
+
+#colecao div img {
+  width: 80%;
+}
+
+#colecao img {
+  transition: filter 0.3s ease;
+  transition: box-shadow 0.3s ease;
+}
+#colecao img:hover {
+  transform: scale(1.05);
+  filter: brightness(0.9);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+#destaque {
+  background-color: #fbfaff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#destaque h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 3vh;
+  color: #474747;
+}
+
+#destaqueImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5vh;
+}
