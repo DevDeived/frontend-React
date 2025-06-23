@@ -35,7 +35,6 @@ h1{
 #produtoImg img {
   width: 20vw;
   position: relative;
-  background-color: #968e8e33;
   padding: 1vw;
   transition: filter 0.3s ease;
   transition: box-shadow 0.3s ease;
@@ -115,4 +114,8 @@ h1{
 .preco-atual {
   color: black;
   font-weight: bold;
+}
+#image{
+  width: 19vw;
+
 }
