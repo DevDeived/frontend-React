@@ -1,14 +1,19 @@
-import Footer from "../Components/Footer/Footer";
-import Header from "../Components/HeaderHome/Header";
 
-function CriarContaPage() {
+import CriacaoConta from "../Components/CriacaoConta/CriacaoConta"
+import Footer from "../Components/Footer/Footer"
+
+import LoginHeader from "../Components/LoginHeader/LoginHeader"
+
+
+function CriacaoContaPage() {
+  
   return (
     <>
-      <Header />
-      <h1>Conta</h1>
-      <Footer />
+        <LoginHeader></LoginHeader>
+        <CriacaoConta></CriacaoConta>
+        <Footer></Footer>
     </>
-  );
+  )
 }
 
-export default CriarContaPage;
+export default CriacaoContaPage

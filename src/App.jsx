@@ -4,6 +4,7 @@ import Loginpage from "./Pages/Loginpage";
 import DetalhesProdutosPage from "./Pages/DetalheProdutoPage";
 import CriarContaPage from "./Pages/CriarContaPage";
 
+
 function App() {
   
 
@@ -13,9 +14,9 @@ function App() {
       <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/login" element={<Loginpage />} />
+          <Route path="/CreateCount" element={<CriacaoContaPage />} />
           <Route path="/produtos" element={<DetalhesProdutosPage />} />
-          <Route path="/conta" element={<CriarContaPage />} />
-          
+
       </Routes>
     </BrowserRouter>
     </>
