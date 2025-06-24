@@ -9,7 +9,7 @@ function CriacaoConta() {
       <section id="loginBody">
         <div id="loginForm">
           <div id="loginTitles">
-            <h1>Crie sua conta</h1><br></br>
+            <h1>Crie sua conta</h1>
             <p>Já possui uma conta ?   Entre <a href="">aqui</a></p>
           </div>
           <div id="inputsLoginForm">

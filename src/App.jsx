@@ -14,7 +14,7 @@ function App() {
       <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/login" element={<Loginpage />} />
-          <Route path="/CreateCount" element={<CriacaoContaPage />} />
+          <Route path="/CreateCount" element={<CriarContaPage />} />
           <Route path="/produtos" element={<DetalhesProdutosPage />} />
 
       </Routes>
