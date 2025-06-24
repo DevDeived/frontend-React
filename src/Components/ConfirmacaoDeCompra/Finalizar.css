@@ -1,0 +1,76 @@
+* {
+    padding: 0 ;
+    margin: 0;
+
+}
+ #finalizarcompra {
+    background-color: white;
+    border-radius: 5px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 750px;
+   height: 248px;
+
+ }
+ hr {
+    border: solid 1px #cccccc;
+ }
+ p {
+    font-size: 14px;
+    font-weight: 700px;
+
+ }
+ button {
+    background-color: #F6AA1C;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    height: 50px;
+    width: 690px;
+    font-weight: 700px;
+ }
+ #finalizar {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-align: left;
+    width: 90%;
+
+ }
+ #total {
+    font-size: 34px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+    line-height: 34px;
+    margin-top: 16px;
+
+ }
+ #total p {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 34px;
+
+ }
+ #valor {
+    color: #ee4266;
+ }
+
+ #parcela {
+    font-size: 12px;
+    font-weight: 500;
+    text-align: right;
+    width: 90%;
+    color: #8f8f8f;
+    margin-bottom: 16px;
+
+ }
+ hr {
+    width: 90%;
+
+ }

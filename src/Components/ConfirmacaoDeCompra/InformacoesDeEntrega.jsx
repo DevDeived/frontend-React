@@ -1,7 +1,7 @@
 function InformacoesDeEntrega() {
   return (
     <>
-      <div>
+      <section>
         <form action="">
           <p>Informações de Entrega</p>
           <hr />
@@ -26,7 +26,7 @@ function InformacoesDeEntrega() {
           <input type="text" name="" id="" placeholder="Insira complemento" />
           <br />
         </form>
-      </div>
+      </section>
     </>
   );
 }

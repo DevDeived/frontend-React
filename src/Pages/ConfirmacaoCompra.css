@@ -1,0 +1,7 @@
+#confirmacaocompra{
+    background-color: #f9f8fe;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+}

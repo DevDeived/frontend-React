@@ -1,7 +1,7 @@
 function ResumoDaCompra() {
   return (
     <>
-      <div>
+      <section>
         <div>
           <p>RESUMO</p>
         </div>
@@ -53,7 +53,7 @@ function ResumoDaCompra() {
           </div>
         </div>
         <button>Realizar Pagamento</button>
-      </div>
+      </section>
     </>
   );
 }

@@ -1,7 +1,7 @@
 function InformacoesPessoais() {
   return (
     <>
-      <div>
+      <section>
         <form action="">
           <p>Informações Pessoais</p>
           <hr />
@@ -22,7 +22,7 @@ function InformacoesPessoais() {
           <input type="text" name="" id="" placeholder="Insira seu celular" />
           <br />
         </form>
-      </div>
+      </section>
     </>
   );
 }

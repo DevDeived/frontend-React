@@ -1,12 +1,14 @@
+import "./Finalizar.css"
 function FinalizarCompra() {
   return (
-    <div>
-    <p>Finalizar Compra</p><hr />
-    <p>Total</p>
-    <p>R$219,00</p>
-    <p>ou 10x de 21,90 sem juros</p>
+    <section id="finalizarcompra">
+    <p id="finalizar">Finalizar Compra</p><hr />
+    
+    <div  id="total"><p>Total</p> <p id="valor">R$219,00</p></div>
+   
+    <p id="parcela">ou 10x de 21,90 sem juros</p>
     <button>Realizar Pagamento</button>
-    </div>
+    </section>
   )
 }
 

@@ -1,7 +1,7 @@
 function InformacoesDePagamento() {
   return (
     <>
-    <div>
+    <section>
       <form action="">
         <p>Informações de Pagamento</p>
         <hr />
@@ -24,7 +24,7 @@ function InformacoesDePagamento() {
         <input type="text" name="" id="" placeholder="CVV" />
         <br />
       </form>
-    </div>
+    </section>
     </>
   );
 }
