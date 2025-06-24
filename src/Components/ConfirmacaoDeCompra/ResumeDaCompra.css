@@ -1,0 +1,20 @@
+#resumocompra {
+    width: 468px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+#tennis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e2e3ff;
+    width: 71.18px;
+    height: 58px;
+}
+
+#resumo {
+    display: flex;
+    flex-direction: row;
+}

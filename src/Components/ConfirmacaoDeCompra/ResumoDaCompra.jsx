@@ -1,18 +1,19 @@
+import Tennis from "../../assets/White-Sneakers.png"
+import "./ResumeDaCompra.css"
 function ResumoDaCompra() {
   return (
     <>
-      <section>
+      <section id="resumocompra">
         <div>
-          <p>RESUMO</p>
+          <p >RESUMO</p>
         </div>
         <hr />
-        <div>
-          <div>
-            <img src="" alt="" />
+        <div id="resumo">
+          <div id="tennis">
+            <img src={Tennis} alt="" />
           </div>
-          <div>
             <p>Tênis Nike Revolution 6 Next Nature Masculino </p>
-          </div>
+        
         </div>
         <hr />
         <div>
