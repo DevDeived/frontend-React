@@ -1,3 +1,4 @@
+
 import CriacaoConta from "../Components/CriacaoConta/CriacaoConta"
 import Footer from "../Components/Footer/Footer"
 
@@ -16,5 +17,3 @@ function CriacaoContaPage() {
 }
 
 export default CriacaoContaPage
-
-
