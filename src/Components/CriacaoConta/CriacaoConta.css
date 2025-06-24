@@ -91,7 +91,13 @@
     border: none;
     cursor: pointer;
     color: white;
+    transition: opacity 0.3s ease;
 }
+
+#inputsLoginForm button:hover {
+    opacity: 0.8; 
+}
+
 #formRedirection {
     display: flex;
     height: 5vh;
@@ -106,4 +112,8 @@
 }
 #formRedirection img {
     width: 5vw;
+    transition: opacity 0.3s ease;
+}
+#formRedirection img:hover{
+    opacity: 0.8;
 }
