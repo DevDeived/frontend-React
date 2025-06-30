@@ -1,5 +1,5 @@
 import Tennis from "../../assets/White-Sneakers.png"
-import "./ResumeDaCompra.css"
+import "./ResumoDaCompra.css"
 function ResumoDaCompra() {
   return (
     <>

@@ -12,14 +12,15 @@
   line-height: 24px;
   font-weight: 300;
 }
-ul {
+#links ul, #contato ul {
   margin-top: 2rem;
 }
-li {
+#links li, #contato li {
   margin-bottom: 0.8rem;
+  color: white;
 }
 
-li a {
+#links a {
   text-decoration: none;
   color: white;
   font-weight: 300;
@@ -47,6 +48,7 @@ li a {
 
 #sobre p {
   width: 22vw;
+  color: white;
 }
 
 #redes {
@@ -92,10 +94,11 @@ li a {
   color: #808080;
 }
 
-#links p,
+#links div p,
 #contato p {
   font-size: 18px;
   font-weight: 600;
+  color: white;
 }
 
 #contato {
@@ -118,6 +121,7 @@ li a {
 
 #rights p {
   font-size: 13px;
+  color: white;
 }
 
 @media (min-width: 344px) and (max-width: 970px) {
