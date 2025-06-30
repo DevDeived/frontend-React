@@ -1,20 +1,118 @@
-#resumocompra {
-    width: 468px;
-    background-color: white;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
+#resumoCompra {
+  width: 468px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 28px;
+  margin: 75px 0 0 0;
+  height: max-content;
+  gap:20px;
+}
+
+#resumoCompra p:nth-child(1) {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: start;
+  color: #474747;
+}
+
+#resumoCompra hr {
+    border: #e5e5e5 solid 1px;
 }
 #tennis {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #e2e3ff;
-    width: 71.18px;
-    height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2e3ff;
+  border-radius: 4px;
+  width: 80px;
+  height: 58px;
+}
+
+#produto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between !important;
+  align-items: center;
+  gap: 16px;
+}
+
+#produto p {
+  color: #1f1f1f;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 #resumo {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.resumo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#resumoCompra .resumo p:nth-child(1) {
+  font-size: 14px;
+  font-weight: 500;
+  color: #8f8f8f;
+  letter-spacing: 0.25px;
+}
+
+#resumoCompra .resumo p:nth-child(2) {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1f1f1f;
+  letter-spacing: 0.25px;
+}
+
+#resumoCompra #total {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6aa1c0d;
+  border: #f6aa1c26 solid 1px;
+  border-radius: 4px;
+  padding: 20px;
+  gap: 8px;
+}
+
+#resumoCompra #total div:nth-child(1) {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+}
+
+#resumoCompra #total div:nth-child(1) p {
+    font-size: 24px;
+    font-weight: 700;
+    color:#1f1f1f;
+    padding: 0;
+}
+
+#resumoCompra #total div:nth-child(2) p {
+    font-size: 12px;
+    font-weight: 500;
+    color:#8f8f8f;
+    text-align: right;
+    padding: 0;
+}
+
+#resumoCompra button {
+  background-color: #f6aa1c;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  height: 50px;
+  width: 100%;
+  font-weight: 700px;
+}
+
+#resumoCompra button:hover {
+  background-color: #cf8900;
+  cursor: pointer;
 }

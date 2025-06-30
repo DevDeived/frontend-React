@@ -1,10 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  color: #1f1f1f;
-  letter-spacing: 1px;
-}
-
 #finalizarCompra h3 {
   font-size: 32px;
   font-weight: 700;
@@ -16,7 +9,7 @@
   justify-content: center;
   align-items: flex-start;
   width: 750px;
-  gap: 20px;
+  gap: 12px;
 }
 
 #finalizarCompra label {
@@ -37,11 +30,11 @@
   justify-content: center;
   align-items: flex-start;
   width: 100%;
-  padding: 4%;
+  padding: 28px;
 }
 
 #finalizarCompra hr {
-  border: solid 1px #cccccc;
+  border: solid 1px #e5e5e5;
   width: 100%;
 }
 #finalizarCompra p {
@@ -127,19 +120,20 @@
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
-  align-items: center;
-  margin-top: 28px 0 ;
+  padding: 28px 0 0 0 ;
 }
 #total p:nth-child(1) {
   font-size: 18px;
   font-weight: 700;
   color: #1f1f1f;
+  padding: 0;
 }
 
 #total p:nth-child(2) {
   font-weight: 700;
   font-size: 18px;
   color: #ee4266;
+  padding: 0;
 }
 
 #finalCompra p:nth-child(4) {
@@ -148,6 +142,7 @@
   font-weight: 500;
   font-size: 12px;
   width: 100%;
+  padding: 10px 0 24px ;
 }
 
 #finalizarCompra button {
