@@ -1,0 +1,129 @@
+#finalizarCompra h3 {
+  font-size: 32px;
+  font-weight: 700;
+  padding: 12px 0;
+}
+#finalizarCompra {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 55vw;
+  gap: 12px;
+}
+
+#finalizarCompra label {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 24px 0 12px 0;
+  color: #474747;
+}
+
+#infoPessoal,
+#infoEntrega,
+#infoPagamento,
+#finalCompra {
+  background-color: white;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding: 28px;
+}
+
+#finalizarCompra hr {
+  border: solid 1px #e5e5e5;
+  width: 100%;
+}
+#finalizarCompra p {
+  padding-bottom: 22px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #474747;
+}
+#finalizarCompra form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+#finalizarCompra form input {
+  width: 100%;
+  border: none;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  height: 60px;
+  padding-left: 12px;
+}
+#infoPagamento p {
+  padding-top: 20px;
+}
+#finalizarCompra input::placeholder {
+  color: #666667;
+}
+#formaDePagamento {
+  width: 100% !important;
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  flex-direction: row !important;
+  gap: 20px !important;
+}
+#infoPagamento p:nth-child(3) {
+  font-size: 12px !important;
+}
+#formaDePagamento label {
+  width: 30% !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  padding: 0;
+}
+
+#formaDePagamento input {
+  height: 20px !important;
+  width: 20px !important;
+  accent-color: #c92071;
+}
+
+#dadosCartao {
+  display: flex;
+  
+  width: 100%;
+}
+
+#dadosCartao div:nth-child(3) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#dadosCartao div:nth-child(3) div {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: 344px) and (max-width: 970px) {
+  #finalizarCompra {
+    width: 90vw;
+  }
+
+  #finalizarCompra h3 {
+    font-size: 18px;
+  }
+
+  #dadosCartao div:nth-child(3) div {
+    width: 100%;
+  }
+
+  #dadosCartao div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}

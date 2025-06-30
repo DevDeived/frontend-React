@@ -1,4 +1,3 @@
-
 #footer {
   color: white;
   background-color: #1f1f1f;
@@ -118,6 +117,9 @@ li a {
 
 #rights p {
   font-size: 13px;
+}
+.oiSom{
+  color: white;
 }
 
 @media (min-width: 344px) and (max-width: 970px) {

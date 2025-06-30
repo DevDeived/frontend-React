@@ -1,5 +1,6 @@
 import Logo2 from "../../assets/logo2.png";
 import Rectangle from "../../assets/Rectangle.png";
+import Facebook from "../../assets/facebook.svg"
 import "./Footer.css";
 function Footer() {
   return (
@@ -8,7 +9,7 @@ function Footer() {
         <div id="info">
           <div id="sobre">
             <img id="logo" src={Logo2} alt="" />
-            <p>
+            <p className="oiSom">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et dolore.
             </p>
