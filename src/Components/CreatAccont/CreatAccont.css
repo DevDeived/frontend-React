@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    overflow-x: hidden;
+    font-family: "Inter", sans-serif;
+    background-color: #F5F5F5;
+}
+
+
+#cabecalhosuperiorcreat{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4vh;
+    width: 60vw;
+    background-color: white;
+    width: 38vw;
+}
+
+.textsp{
+    font-size: 8px;
+    background-color: white;
+}
+
+.campospreench{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: white;
+    
+}
+
+#camposplace{
+    width: 35vw;
+    height: 6vh;
+    background-color: #EFEFFF;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #474747;
+    font-size: 8px;
+    padding-left: 4px;
+}
+
+#infope{  
+    display: flex;
+    flex-direction: column;
+    padding-top: 3vh;
+    font-size: 10px;
+    background-color: white;
+    font-weight: bold;
+    
+}
+
+#infoentr{
+    display: flex;
+    flex-direction: column;
+    padding-top: 3vh;
+    font-size: 10px;
+    background-color: white;
+    font-weight: bold;
+}
+
+#checklembrete{
+    width: 35vw;
+    height: 10vh;
+    font-size: 10px;
+    background-color: white;
+}
+
+
+#novesfora{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vh;
+    gap: 1vh;
+    background-color: white;
+}
+
+#botaodecriaraconta{
+    width: 35vw;
+    height: 6vh;
+    background-color: #C92071;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: opacity 0.3s ease;
+}
+
+
+#divigeral{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+#superiorcriar h1{
+    background-color: white;
+}
+
+#checkin{
+    margin-right: 5px;
+    color: #C92071;
+}
+
+#checkin input{
+    color: #C92071;
+}
+
+#superiorcriar h1{
+    background-color: #f5f5f5;
+    
+    margin-top: 5vh;
+    padding-bottom: 2vh;
+}
