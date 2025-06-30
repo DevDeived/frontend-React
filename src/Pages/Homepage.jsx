@@ -1,7 +1,3 @@
-
-
-import Footer from "../Components/Footer/Footer"
-import Header from "../Components/Header"
 import Banner from "../Components/Banner/Banner"
 import ColecoesDestaque from "../Components/ColecaoEmDestaque/ColecaoEmDestaque"
 import Footer from "../Components/Footer/Footer"

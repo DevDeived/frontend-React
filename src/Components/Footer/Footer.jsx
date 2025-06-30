@@ -1,85 +1,84 @@
-import logo2 from "../../assets/logo2-.png";
+import Logo2 from "../../assets/logo2.png";
+import Rectangle from "../../assets/Rectangle.png";
+import Facebook from "../../assets/facebook.svg"
 import "./Footer.css";
-import { FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
-
 function Footer() {
   return (
     <>
       <section id="footer">
-        <div id="footerContent">
-          <img src={logo2} alt="" />
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex aliquam
-            nulla consequuntur distinctio quaerat ut tempora facere nemo
-            deserunt ratione. Dignissimos aliquid corporis incidunt saepe.
-          </p>
-          <div id="content">
+        <div id="info">
+          <div id="sobre">
+            <img id="logo" src={Logo2} alt="" />
+            <p className="oiSom">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore.
+            </p>
+            <div id="redes">
+              <a href="https://facebook.com/"></a>
+              <a href="https://intagram.com/"></a>
+              <a href="https://x.com/"></a>
+            </div>
+          </div>
+          <div id="links">
             <div>
-              <a href=""><FaFacebook size={30} color="#1877F2" /></a>
+              <p>Informação</p>
+              <ul>
+                <li>
+                  <a href="">Sobre Drip Store</a>
+                </li>
+                <li>
+                  <a href="">Segurança</a>
+                </li>
+                <li>
+                  <a href="">Wishlist</a>
+                </li>
+                <li>
+                  <a href="">Blog</a>
+                </li>
+                <li>
+                  <a href="">Trabalhe conosco</a>
+                </li>
+                <li>
+                  <a href="">Meus Pedidos</a>
+                </li>
+              </ul>
             </div>
             <div>
-              <a href=""><FaInstagram size={30} color="#E1306C" /></a>
+              <p>Categorias</p>
+              <ul>
+                <li>
+                  <a href="">Camisetas</a>
+                </li>
+                <li>
+                  <a href="">Calças</a>
+                </li>
+                <li>
+                  <a href="">Bonés</a>
+                </li>
+                <li>
+                  <a href="">Headphones</a>
+                </li>
+                <li>
+                  <a href="">Tênis</a>
+                </li>
+              </ul>
             </div>
-            <div>
-              <a href=""><FaTwitter size={30} color="#1DA1F2" /></a>
-            </div>
+          </div>
+          <div id="contato">
+            <p>Contato</p>
+            <ul>
+              <li>Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - CE, 60150-161</li>
+              <li>(85) 3051-3411</li>
+            </ul>
           </div>
         </div>
-        <div id="footerInfor">
-          <div>
-            <h3>Informação</h3>
-            <p>
-              <a href="#">Sobre Drip Store</a>
-            </p>
-            <p>
-              <a href="#">Segurança</a>
-            </p>
-            <p>
-              <a href="#">Wishlist</a>
-            </p>
-            <p>
-              <a href="#">Blog</a>
-            </p>
-            <p>
-              <a href="#">Trabalhe conosco</a>
-            </p>
-            <p>
-              <a href="#">Meus pedidos</a>
-            </p>
-          </div>
-          <div>
-            <h3>Categorias</h3>
-            <p>
-              <a href="#">Camisetas</a>
-            </p>
-            <p>
-              <a href="#">Calças</a>
-            </p>
-            <p>
-              <a href="#">Bonés</a>
-            </p>
-            <p>
-              <a href="#">Headphones</a>
-            </p>
-            <p>
-              <a href="#">Tênis</a>
-            </p>
-          </div>
-          <div>
-            <h3>Contato</h3>
-            <span>
-              Av.Santos Dumont, 1510 - 1 <br />
-              andar - Aldeota, Fortaleza - <br />
-              Ce, 60150-161
-            </span>
-            <span>(85) 3051-3411</span>
+
+        <div>
+          <div id="rights">
+            <img src={Rectangle} alt="" />
+            <p>@ 2022 Digital College</p>
           </div>
         </div>
-      </section>
-      <section id="footerDigital">
-        <footer>
-          <p>© 2025 - Digital college</p>
-        </footer>
       </section>
     </>
   );
