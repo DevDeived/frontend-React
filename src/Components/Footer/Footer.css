@@ -4,7 +4,27 @@
   width: 100%;
   height: 70vh;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10vh 7vw 3vh 7vw;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+}
+#links ul, #contato ul {
+  margin-top: 2rem;
+}
+#links li, #contato li {
+  margin-bottom: 0.8rem;
+  color: white;
+}
+
+#links a {
+  text-decoration: none;
+
   background-color: #1f1f1f;
+
   color: white;
   padding-top: 7vh;
 }
@@ -19,10 +39,22 @@
   flex-direction: column;
   margin-left: 3vw;
 }
+
+
+#logo {
+  width: 240px;
+}
+
+#sobre p {
+  width: 22vw;
+  color: white;
+}
+
 #footerContent p {
   text-align: justify;
   margin-bottom: 5vh;
   font-size: 16px;
+
 }
 
 #content {
@@ -51,8 +83,16 @@
   cursor: pointer;
 }
 
+
+#links div p,
+#contato p {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
 #footerInfor a:hover {
   color: #00bfff;
+
 }
 
 #footerInfor span {
@@ -66,8 +106,70 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  gap: 3vh;
+  font-size: 1rem;
+}
+
+#rights img {
+  width: 86vw;
+}
+
+#rights p {
+  font-size: 13px;
+  color: white;
+}
+
+@media (min-width: 344px) and (max-width: 970px) {
+  #footer {
+    justify-content: center;
+    align-items: start;
+    padding: 7vh 5vw 3vh 5vw;
+  }
+  #info {
+    flex-direction: column;
+    gap: 6vh;
+  }
+  #sobre {
+    width: 80vw;
+    gap: 4vh;
+  }
+  #sobre p {
+    font-size: 14px;
+    width: 100%;
+  }
+  ul {
+    margin-top: 0.5rem;
+  }
+  li {
+    margin-bottom: 0.5rem;
+  }
+  #logo {
+    width: 170px;
+  }
+  #links {
+    width: 75vw;
+    gap: 8vw;
+    justify-content: start;
+  }
+  #links p {
+    padding-bottom: 10px;
+  }
+
+  #contato {
+    width: 50vw;
+  }
+  #contato ul li:nth-child(1) {
+    margin-bottom: 5vh;
+  }
+  #rights img {
+    width: 87vw;
+  }
+}
+
   margin-top: 0.1vh;
   background-color: #1f1f1f;
   color: white;
   /* margin-bottom: 1vh; */
 }
+
