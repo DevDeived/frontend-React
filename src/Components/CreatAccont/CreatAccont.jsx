@@ -4,12 +4,12 @@ import "./CreatAccont.css"
 function CreatAccont() {
   return (
     <>
-      <section >
-        <div id="divigeral">
-            <div id="cabecalhosuperiorcreat">
-                <div id="superiorcriar">
+      <section id="divigeral">
+        <div>
+        <div id="superiorcriar">
                     <h1>Criar Conta</h1>
                 </div>
+            <div id="cabecalhosuperiorcreat">
                 <div class="campospreench">
                     <p id="infope" >Informações Pessoais</p>
                     <hr id="hrzinho"/>
@@ -18,7 +18,7 @@ function CreatAccont() {
                 </div>
                 <div class="campospreench">
                     <label class="textsp" htmlFor="">CPF *</label>
-                    <input type="number" name="" placeholder="Insira seu CPF" id="camposplace" />
+                    <input type="text" name="" placeholder="Insira seu CPF" id="camposplace" />
                 </div>
                 <div class="campospreench">
                     <label class="textsp" htmlFor="">E-mail *</label>
@@ -44,7 +44,7 @@ function CreatAccont() {
                 </div>
                 <div class="campospreench">
                     <label class="textsp" htmlFor="">Cidade *</label>
-                    <input type="text" name="" placeholder="Insira sua cudade" id="camposplace" />
+                    <input type="text" name="" placeholder="Insira sua cidade" id="camposplace" />
                 </div>
                 <div class="campospreench">
                     <label class="textsp" htmlFor="">CEP *</label>
