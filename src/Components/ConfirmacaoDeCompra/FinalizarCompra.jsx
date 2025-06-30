@@ -56,6 +56,10 @@ function FinalizarCompra() {
               <label htmlFor="">Data de validade do Cartão *</label>
               <input type="text" name="" id="" placeholder="Insira a validade do cartão" />
             </div>
+            <div>
+              <label htmlFor="">CVV *</label>
+              <input type="text" name="" id="" placeholder="CVV" />
+            </div>
           </div>
         </form>
       </div>
