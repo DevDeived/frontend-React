@@ -7,7 +7,7 @@ function FinalizarCompra() {
       <div id="infoPessoal">
         <p>Informações Pessoais</p>
         <hr />
-        <form id="form1">
+        <form>
           <label htmlFor="">Nome Completo *</label>
           <input type="text" name="" id="nome" placeholder="Insira seu nome" />
           <label htmlFor="">CPF *</label>
@@ -19,7 +19,7 @@ function FinalizarCompra() {
         </form>
       </div>
       <div id="infoEntrega">
-        <form id="form2">
+        <form>
           <p>Informações de Entrega</p>
           <hr />
           <label htmlFor="">Endereço *</label>
@@ -56,20 +56,8 @@ function FinalizarCompra() {
               <label htmlFor="">Data de validade do Cartão *</label>
               <input type="text" name="" id="" placeholder="Insira a validade do cartão" />
             </div>
-            <div><label htmlFor="">CVV *</label>
-          <input type="text" name="" id="" placeholder="CVV" /></div>
           </div>
         </form>
-      </div>
-      <div id="finalCompra">
-        <p>Finalizar Compra</p>
-        <hr />
-        <div id="total">
-          <p>Total</p>
-          <p>R$219,00</p>
-        </div>
-        <p>ou 10x de 21,90 sem juros</p>
-        <button>Realizar Pagamento</button>
       </div>
     </section>
   );
