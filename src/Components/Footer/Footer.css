@@ -84,7 +84,8 @@
 }
 
 #footer #info #sobre #redes a:hover {
-  filter: brightness(30%);
+  filter: brightness(50%);
+  background-color: #1f1f1f00;
 }
 
 #footer #info #links {
@@ -169,16 +170,22 @@
     justify-content: center;
     align-items: start;
     padding: 7vh 5vw 3vh 5vw;
+    width: 100vw;
   }
-  #info {
+  #footer #info {
     flex-direction: column;
     gap: 6vh;
+    width: 90vw;
   }
-  #sobre {
-    width: 50vw;
+  #footer #info p {
+    width: 90%;
+  }
+
+  #footer #info #sobre {
+    width: 90vw;
     gap: 4vh;
   }
-  #sobre p {
+  #footer #info #sobre p {
     font-size: 14px;
     width: 100%;
   }
