@@ -15,3 +15,14 @@
 #headerLogin img {
     width: 15vw;
 }
+
+@media (min-width: 344px) and (max-width: 970px) {
+     #headerLogin{
+        height: 8vh;
+        justify-content: center;
+        
+    }
+    #headerLogin img {
+        width: 40vw;
+    }
+}
