@@ -9,7 +9,7 @@ function Header() {
         <div id="HomePage">
           <img src={Logo} alt="" />
           <input type="text" placeholder="Pesquisar produto..." />
-          <a href="">Cadastre-se</a>
+          <a href="CreateCount">Cadastre-se</a>
           <button>Entrar</button>
           <p><FaShoppingCart /></p>
         </div>
@@ -19,7 +19,8 @@ function Header() {
             <a href="/"><li>Home</li></a>
             <a href="Produtos"><li>Produtos</li></a>
             <a href=""><li>Categoria</li></a>
-            <a href=""><li>Meus Pedidos</li></a>
+            <a href="pedidos"><li>Meus Pedidos</li></a>
+          
           </ul>
         </div>
       </section>
