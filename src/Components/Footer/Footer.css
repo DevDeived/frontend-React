@@ -10,6 +10,7 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
+  box-sizing: border-box;
 }
 #footer ul {
   margin-top: 2rem;
@@ -106,23 +107,21 @@
   background-color: #1f1f1f;
 }
 
-#footer #info #links ul li a{
+#footer #info #links ul li a {
   background-color: #1f1f1f;
 }
-
 
 #footer #info #links a:hover {
   color: #808080;
 }
 
 #footer #info #contato {
-  background-color:#1f1f1f;
+  background-color: #1f1f1f;
 }
 
 #footer #info #contato ul {
-  background-color:#1f1f1f;
+  background-color: #1f1f1f;
 }
-
 
 #footer #info #links p,
 #footer #info #contato p {
@@ -132,7 +131,7 @@
   background-color: #1f1f1f;
 }
 
-#footer #info #contato ul li{
+#footer #info #contato ul li {
   width: 14vw;
   gap: 16px;
   color: white;
@@ -147,20 +146,16 @@
   gap: 3vh;
   font-size: 1rem;
   background-color: #1f1f1f;
+  width: 100vw;
 }
 
-#footer #rights img {
+#footer #rights hr {
   width: 86vw;
   background-color: #1f1f1f;
 }
 
 #footer #rights p {
   font-size: 13px;
-  background-color: #1f1f1f;
-  color: white;
-}
-.oiSom{
-  color: white;
   background-color: #1f1f1f;
   color: white;
 }
@@ -177,17 +172,15 @@
     gap: 6vh;
     width: 90vw;
   }
-  #footer #info p {
-    width: 90%;
-  }
 
   #footer #info #sobre {
-    width: 90vw;
+    width: 100vw;
     gap: 4vh;
   }
-  #footer #info #sobre p {
+
+  #footer #info #sobre .oiSom {
+    width: 80%;
     font-size: 14px;
-    width: 100%;
   }
   ul {
     margin-top: 0.5rem;
@@ -213,7 +206,19 @@
   #contato ul li:nth-child(1) {
     margin-bottom: 5vh;
   }
-  #rights img {
-    width: 87vw;
+
+  #footer #info #contato {
+    width: 100vw;
+  }
+  #footer #info #contato ul li {
+    width: 70%;
+  }
+  #footer #rights {
+    width: 90vw;
+  }
+  #footer #rights hr {
+    width: 100%;
+    border: #ffffff 0.5px solid;
+    
   }
 }

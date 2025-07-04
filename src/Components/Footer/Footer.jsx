@@ -74,7 +74,7 @@ function Footer() {
 
         <div>
           <div id="rights">
-            <img src={Rectangle} alt="" />
+            <hr />
             <p>@ 2022 Digital College</p>
           </div>
         </div>
