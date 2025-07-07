@@ -1,0 +1,71 @@
+#finalCompra {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width:55vw;
+  background-color: white;
+}
+
+#finalCompra p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #474747;
+  padding-bottom: 22px;
+}
+#finalCompra hr {
+  border: #e5e5e5 solid 1px;
+  width: 100%;
+}
+#total {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding: 28px 0 0 0 ;
+}
+#total p:nth-child(1) {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1f1f1f;
+  padding: 0;
+}
+
+#total p:nth-child(2) {
+  font-weight: 700;
+  font-size: 18px;
+  color: #ee4266;
+  padding: 0;
+}
+
+#finalCompra p:nth-child(4) {
+  color: #8f8f8f;
+  text-align: right;
+  font-weight: 500;
+  font-size: 12px;
+  width: 100%;
+  padding: 10px 0 24px ;
+}
+
+#finalCompra button {
+  background-color: #f6aa1c;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  height: 50px;
+  width: 100%;
+  font-weight: 700;
+}
+
+#finalCompra button:hover {
+  background-color: #cf8900;
+  cursor: pointer;
+}
+
+@media (min-width: 344px) and (max-width: 970px) {
+
+  #finalCompra {
+    width: 100vw;
+    box-shadow: 0 -5px 25px #0000000D;
+  }
+}
