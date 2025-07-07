@@ -10,115 +10,153 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
+  box-sizing: border-box;
 }
-ul {
+#footer ul {
   margin-top: 2rem;
 }
-li {
+#footer li {
   margin-bottom: 0.8rem;
 }
 
-li a {
+#footer li a {
   text-decoration: none;
   color: white;
   font-weight: 300;
 }
 
-#info {
+#footer #info {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: start;
   padding-bottom: 4vh;
+  background-color: #1f1f1f;
 }
 
-#sobre {
+#footer #info #sobre {
   display: flex;
   flex-direction: column;
   width: 26vw;
   gap: 6vh;
   font-weight: 200;
+  background-color: #1f1f1f;
 }
 
-#logo {
+#footer #info #sobre #logo {
   width: 240px;
+  background-color: #1f1f1f;
 }
 
-#sobre p {
+#footer #info #sobre .oiSom {
   width: 22vw;
+  color: white;
+  background-color: #1f1f1f;
 }
 
-#redes {
+#footer #info #sobre #redes {
   width: 124px;
   display: flex;
   justify-content: space-between;
   color: white;
   margin: 0 0 0 -5px;
+  background-color: #1f1f1f;
 }
 
-#redes a {
+#footer #info #sobre #redes a {
   width: 21px;
   height: 21px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  background-color: #1f1f1f;
 }
 
-#redes a:nth-child(1) {
+#footer #info #sobre #redes a:nth-child(1) {
   background-image: url("../../assets/facebook.svg");
 }
 
-#redes a:nth-child(2) {
+#footer #info #sobre #redes a:nth-child(2) {
   background-image: url("../../assets/instagram.svg");
 }
 
-#redes a:nth-child(3) {
+#footer #info #sobre #redes a:nth-child(3) {
   background-image: url("../../assets/twitter.svg");
 }
 
-#redes a:hover {
+#footer #info #sobre #redes a:hover {
   filter: brightness(50%);
+  background-color: #1f1f1f00;
 }
 
-#links {
+#footer #info #links {
   display: flex;
   justify-content: space-between;
   align-items: start;
   gap: 8vw;
+  background-color: #1f1f1f;
+}
+#footer #info #links div {
+  background-color: #1f1f1f;
+}
+#footer #info #links ul {
+  background-color: #1f1f1f;
 }
 
-#links a:hover {
+#footer #info #links ul li {
+  background-color: #1f1f1f;
+}
+
+#footer #info #links ul li a {
+  background-color: #1f1f1f;
+}
+
+#footer #info #links a:hover {
   color: #808080;
 }
 
-#links p,
-#contato p {
+#footer #info #contato {
+  background-color: #1f1f1f;
+}
+
+#footer #info #contato ul {
+  background-color: #1f1f1f;
+}
+
+#footer #info #links p,
+#footer #info #contato p {
   font-size: 18px;
   font-weight: 600;
+  color: white;
+  background-color: #1f1f1f;
 }
 
-#contato {
+#footer #info #contato ul li {
   width: 14vw;
   gap: 16px;
+  color: white;
+  background-color: #1f1f1f;
 }
 
-#rights {
+#footer #rights {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 3vh;
   font-size: 1rem;
+  background-color: #1f1f1f;
+  width: 100vw;
 }
 
-#rights img {
+#footer #rights hr {
   width: 86vw;
+  background-color: #1f1f1f;
 }
 
-#rights p {
+#footer #rights p {
   font-size: 13px;
-}
-.oiSom{
+  background-color: #1f1f1f;
   color: white;
 }
 
@@ -127,18 +165,22 @@ li a {
     justify-content: center;
     align-items: start;
     padding: 7vh 5vw 3vh 5vw;
+    width: 100vw;
   }
-  #info {
+  #footer #info {
     flex-direction: column;
     gap: 6vh;
+    width: 90vw;
   }
-  #sobre {
-    width: 50vw;
+
+  #footer #info #sobre {
+    width: 100vw;
     gap: 4vh;
   }
-  #sobre p {
+
+  #footer #info #sobre .oiSom {
+    width: 80%;
     font-size: 14px;
-    width: 100%;
   }
   ul {
     margin-top: 0.5rem;
@@ -164,7 +206,19 @@ li a {
   #contato ul li:nth-child(1) {
     margin-bottom: 5vh;
   }
-  #rights img {
-    width: 87vw;
+
+  #footer #info #contato {
+    width: 100vw;
+  }
+  #footer #info #contato ul li {
+    width: 70%;
+  }
+  #footer #rights {
+    width: 90vw;
+  }
+  #footer #rights hr {
+    width: 100%;
+    border: #ffffff 0.5px solid;
+    
   }
 }

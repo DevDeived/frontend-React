@@ -1,6 +1,5 @@
 import Logo2 from "../../assets/logo2.png";
 import Rectangle from "../../assets/Rectangle.png";
-import Facebook from "../../assets/facebook.svg"
 import "./Footer.css";
 function Footer() {
   return (
@@ -75,7 +74,7 @@ function Footer() {
 
         <div>
           <div id="rights">
-            <img src={Rectangle} alt="" />
+            <hr />
             <p>@ 2022 Digital College</p>
           </div>
         </div>
