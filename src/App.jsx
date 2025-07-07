@@ -7,6 +7,7 @@ import CreatAccontpage from "./Pages/CreatAccontpage";
 import ConfimacaoComprapage from "./Pages/ConfimacaoComprapage";
 import DetalhesProdutosPage from "./Pages/DetalheProdutoPage";
 import CriarContaPage from "./Pages/CriarContaPage";
+import Pedidos from "./Pages/Pedidos"
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
           <Route path="/confirmacao" element={<ConfimacaoComprapage />} />
           <Route path="/criarConta" element={<CriarContaPage />} />
           <Route path="/produtos" element={<DetalhesProdutosPage />} />
-
+          <Route path="/pedidos" element={<Pedidos/>}/>
       </Routes>
     </BrowserRouter>
     </>
