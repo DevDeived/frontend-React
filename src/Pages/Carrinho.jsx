@@ -1,13 +1,14 @@
 
 import Footer from "../Components/Footer/Footer"
-import Header from "../Components/Header"
+
 import CarrinhoBody from "../Components/CarrinhoBody/CarrinhoBody"
+import Header from "../Components/HeaderHome/Header"
 
 function Carrinho() {
 
     return (
         <>
-            <Header />
+            <Header/>
             <CarrinhoBody/>
             <Footer />
         </>
