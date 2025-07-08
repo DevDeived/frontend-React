@@ -1,104 +1,84 @@
 import "./ProdutosEmAltas.css";
 import CardImage from "../../assets/tenisCard.png"
+import Card from "../Card/Card";
 function ProdutosEmAltas() {
   return (
     <>
       <section id="produtos">
         <h1>Produtos em alta</h1>
         <div id="produtoImg">
-          <div id="image">
-            <div className="containerImage">
-              <img src={CardImage} alt="" />
-              <div className="divVerde">
-                <p>30% OFF</p>
-              </div>
-            </div>
-            <div className="containerTitles">
-              <span>Tênis</span>
-              <p>K-Swiss V8 - Masculino</p>
-              <strong><span id="fullprice">$200</span> $100</strong>
-            </div>
-          </div>
-          <div id="image">
-            <div className="containerImage">
-              <img src={CardImage} alt="" />
-              <div className="divVerde">
-                <p>30% OFF</p>
-              </div>
-            </div>
-            <div className="containerTitles">
-              <span>Tênis</span>
-              <p>K-Swiss V8 - Masculino</p>
-              <strong><span id="fullprice">$200</span> $100</strong>
-            </div>
-          </div>
-          <div id="image">
-            <div className="containerImage">
-              <img src={CardImage} alt="" />
-            </div>
-            <div className="containerTitles">
-              <span>Tênis</span>
-              <p>K-Swiss V8 - Masculino</p>
-              <strong><span id="fullprice">$200</span> $100</strong>
-            </div>
-          </div>
-          <div id="image">
-            <div className="containerImage">
-              <img src={CardImage} alt="" />
-              <div className="divVerde">
-                <p>30% OFF</p>
-              </div>
-            </div>
-            <div className="containerTitles">
-              <span>Tênis</span>
-              <p>K-Swiss V8 - Masculino</p>
-              <strong><span id="fullprice">$200</span> $100</strong>
-            </div>
-          </div>
-          <div id="image">
-            <div className="containerImage">
-              <img src={CardImage} alt="" />
- 
-            </div>
-            <div className="containerTitles">
-              <span>Tênis</span>
-              <p>K-Swiss V8 - Masculino</p>
-              <strong><span id="fullprice">$200</span> $100</strong>
-            </div>
-          </div>
-          <div id="image">
-            <div className="containerImage">
-              <img src={CardImage} alt="" />
-
-            </div>
-            <div className="containerTitles">
-              <span>Tênis</span>
-              <p>K-Swiss V8 - Masculino</p>
-              <strong><span id="fullprice">$200</span> $100</strong>
-            </div>
-          </div>
-          <div id="image">
-            <div className="containerImage">
-              <img src={CardImage} alt="" />
-
-            </div>
-            <div className="containerTitles">
-              <span>Tênis</span>
-              <p>K-Swiss V8 - Masculino</p>
-              <strong><span id="fullprice">$200</span> $100</strong>
-            </div>
-          </div>
-          <div id="image">
-            <div className="containerImage">
-              <img src={CardImage} alt="" />
-
-            </div>
-            <div className="containerTitles">
-              <span>Tênis</span>
-              <p>K-Swiss V8 - Masculino</p>
-              <strong><span id="fullprice">$200</span> $100</strong>
-            </div>
-          </div>
+          <Card
+            image={CardImage}
+            style={{}}
+            discount="30% OFF"
+            department="Tênis"
+            description="K-Swiss V8 - Masculino"
+            fullPrice="$200"
+            discountedPrice="$100"
+          />
+          <Card
+            image={CardImage}
+            style={{}}
+            discount="30% OFF"
+            department="Tênis"
+            description="K-Swiss V8 - Masculino"
+            fullPrice="$200"
+            discountedPrice="$100"
+          />
+          <Card
+            image={CardImage}
+            style={{}}
+            discount="30% OFF"
+            department="Tênis"
+            description="K-Swiss V8 - Masculino"
+            fullPrice="$200"
+            discountedPrice="$100"
+          />
+          <Card
+            image={CardImage}
+            style={{ display: "none" }}
+            discount=""
+            department="Tênis"
+            description="K-Swiss V8 - Masculino"
+            fullPrice="$200"
+            discountedPrice="$100"
+          />
+          <Card
+            image={CardImage}
+            style={{ display: "none" }}
+            discount=""
+            department="Tênis"
+            description="K-Swiss V8 - Masculino"
+            fullPrice="$200"
+            discountedPrice="$100"
+          />
+          <Card
+            image={CardImage}
+            style={{ display: "none" }}
+            discount=""
+            department="Tênis"
+            description="K-Swiss V8 - Masculino"
+            fullPrice="$200"
+            discountedPrice="$100"
+          />
+          <Card
+            image={CardImage}
+            style={{ display: "none" }}
+            discount=""
+            department="Tênis"
+            description="K-Swiss V8 - Masculino"
+            fullPrice="$200"
+            discountedPrice="$100"
+          />
+          <Card
+            image={CardImage}
+            style={{ display: "none" }}
+            discount=""
+            department="Tênis"
+            description="K-Swiss V8 - Masculino"
+            fullPrice="$200"
+            discountedPrice="$100"
+          />
         </div>
       </section>
     </>
