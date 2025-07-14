@@ -1,6 +1,7 @@
 import Redirections from "../../assets/redirections.png"
 import Tenis1 from "../../assets/tenis1.png"
 import Tenis2 from "../../assets/tenis2.png"
+import Input from "../Input/Input"
 import "./LoginBody.css"
 function LoginBody() {
 
@@ -13,11 +14,16 @@ function LoginBody() {
             <p>Novo cliente ? Então registre-se <a href="">aqui</a></p>
           </div>
           <div id="inputsLoginForm">
-            <label htmlFor="">Login *</label>
-            <input type="email" placeholder="Insira seu login ou email" />
-
-            <label htmlFor="">Senha *</label>
-            <input type="password" placeholder="Insira sua senha" />´
+          <Input
+            type="text"
+            placeholder="Digite seu username ou email"
+            label="Login *"  
+            />
+          <Input
+            type="password"
+            placeholder="Digite sua senha"
+            label="Senha *"  
+            />
 
             <a href="">Esqueci minha senha</a>
 

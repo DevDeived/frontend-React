@@ -1,6 +1,7 @@
 import "./ProdutosEmAltas.css";
 import CardImage from "../../assets/tenisCard.png"
 import Card from "../Card/Card";
+import Banner2 from "../../assets/banner2.png"
 function ProdutosEmAltas() {
   return (
     <>
@@ -17,13 +18,13 @@ function ProdutosEmAltas() {
             discountedPrice="$100"
           />
           <Card
-            image={CardImage}
+            image={Banner2}
             style={{}}
-            discount="30% OFF"
-            department="Tênis"
-            description="K-Swiss V8 - Masculino"
-            fullPrice="$200"
-            discountedPrice="$100"
+            discount="40% OFF"
+            department="Tênis Nike"
+            description="Nike Air Max 270 - Masculino"
+            fullPrice="$300"
+            discountedPrice="$200"
           />
           <Card
             image={CardImage}

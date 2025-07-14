@@ -60,7 +60,7 @@
 }
 #inputsLoginForm label{
     font-size:10px;
-    color: #1F1F1F;
+    color: red;
     font-weight: bold;
     padding-bottom: 2vh;
 }
@@ -105,8 +105,4 @@
 }
 #formRedirection img {
     width: 5vw;
-}
-
-@media (min-width: 344px) and (max-width: 970px) {
-    
 }

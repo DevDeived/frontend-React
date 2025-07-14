@@ -134,6 +134,10 @@ h1{
   display: flex;
   align-items: start;
   justify-content: flex-start;
+
+}
+.containerImage img{
+  height: 35vh;
 }
 .containerTitles{
   display: flex;

@@ -1,12 +1,13 @@
 
 import "./Card.css"
+
 function Card(props) {
 
     return (
         <>
             <div id="image">
                 <div className="containerImage">
-                    <img src={props.image} alt="" />
+                    <img id="imageCard" src={props.image} alt="" />
                     <div style={props.style} className="divVerde">
                         <p>{props.discount}</p>
                     </div>

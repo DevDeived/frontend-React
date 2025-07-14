@@ -68,13 +68,16 @@
 
 #inputsLoginForm input{
     width: 25vw;
-    height: 6vh;
+    height: 7vh;
     background-color: #dfdcdc;
     border: none;
     outline: none;
     border-radius: 5px;
     padding-left: 2vw;
     margin-bottom: 2vh;
+}
+#inputsLoginForm input::placeholder{
+    font-size: 12px;
 }
 #inputsLoginForm a {
     font-size: 12px;

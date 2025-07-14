@@ -1,5 +1,5 @@
 
-import "./Input.css"
+import "../LoginBody/LoginBody.css"
 function Input(props) {
 
   return (
