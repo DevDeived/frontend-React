@@ -1,5 +1,6 @@
 import "../CarrinhoBody/CarrinhoBody.css"
 import Tenis1 from "../../assets/tenis1.png"
+import InputButton from "../InputButton/InputButton"
 
 function CarrinhoBody() {
 
@@ -50,13 +51,12 @@ function CarrinhoBody() {
 
                     <hr />
                     <div id="campos-cupom-frete">
-                        <div class="campo">
-                            <label for="cupom" id="cupom-color">Cupom de desconto</label>
-                            <div class="input-btn">
-                                <input type="text" id="cupom" placeholder="Insira seu código" />
-                                <button class="btn-ok">OK</button>
-                            </div>
-                        </div>
+                        <InputButton
+                            labelId="cupom-color"
+                            labelValue="Cupom de desconto"
+                            inputId="cupom"
+                            placeholder="Insira seu código"
+                        />
 
                         <div class="campo">
                             <label for="frete" id="frete-color">Calcular frete</label>
