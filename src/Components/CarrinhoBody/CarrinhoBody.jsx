@@ -1,8 +1,22 @@
 import "../CarrinhoBody/CarrinhoBody.css"
 import Tenis1 from "../../assets/tenis1.png"
-import InputButton from "../InputButton/InputButton"
+import InputButton from "../InputButton/InputButton.jsx"
+import { useState } from "react"
 
 function CarrinhoBody() {
+
+    const [count, setCount] = useState(1)
+
+    function incrementar() {
+        setCount(count + 1)
+    }
+
+    function decrementar() {
+        if(count>0) {
+            setCount(count - 1)
+        }
+
+    }
 
     return (
         <>
@@ -32,9 +46,9 @@ function CarrinhoBody() {
 
                         <div class="coluna-quantidade">
                             <div id="quantidade">
-                                <button>-</button>
-                                <span>1</span>
-                                <button>+</button>
+                                <button onClick={decrementar}>-</button>
+                                <span>{count}</span>
+                                <button onClick={incrementar}>+</button>
                             </div>
                             <a href="#" class="remover-item">Remover item</a>
                         </div>
@@ -57,14 +71,12 @@ function CarrinhoBody() {
                             inputId="cupom"
                             placeholder="Insira seu código"
                         />
-
-                        <div class="campo">
-                            <label for="frete" id="frete-color">Calcular frete</label>
-                            <div class="input-btn">
-                                <input type="text" id="frete" placeholder="Insira seu CEP" />
-                                <button class="btn-ok">OK</button>
-                            </div>
-                        </div>
+                        <InputButton
+                            labelId="frete-color"
+                            labelValue="Calcular frete"
+                            inputId="frete"
+                            placeholder="Insira seu CEP"
+                        />
                     </div>
                 </section>
 
@@ -88,6 +100,7 @@ function CarrinhoBody() {
                     </div>
                     <div><button id="btn-resumo-valores-lateral">Continuar</button></div>
                 </section>
+ 
             </section>
 
         </>

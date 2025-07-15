@@ -1,85 +1,38 @@
 import "./ProdutosEmAltas.css";
-import CardImage from "../../assets/tenisCard.png"
 import Card from "../Card/Card";
-import Banner2 from "../../assets/banner2.png"
+import {useState,useEffect} from "react";
+
 function ProdutosEmAltas() {
+  const [data,setData] = useState([])
+
+  useEffect(() => {
+    async function getData() {
+      let response = await fetch("https://68759a5f814c0dfa6538eef2.mockapi.io/api/Produtos")
+      let data = await response.json()
+      setData(data)
+    }
+    getData();
+  }, []);
+  console.log(data)
   return (
     <>
       <section id="produtos">
         <h1>Produtos em alta</h1>
         <div id="produtoImg">
-          <Card
-            image={CardImage}
-            style={{}}
-            discount="30% OFF"
-            department="Tênis"
-            description="K-Swiss V8 - Masculino"
-            fullPrice="$200"
-            discountedPrice="$100"
+          {
+            data.map((produto) => (
+            <Card
+            key={produto.id}
+            image={produto.image}
+            style={produto.style}
+            discount={produto.discount}
+            department={produto.department}
+            description={produto.description}
+            fullPrice={produto.fullPrice}
+            discountedPrice={produto.discountedPrice}
           />
-          <Card
-            image={Banner2}
-            style={{}}
-            discount="40% OFF"
-            department="Tênis Nike"
-            description="Nike Air Max 270 - Masculino"
-            fullPrice="$300"
-            discountedPrice="$200"
-          />
-          <Card
-            image={CardImage}
-            style={{}}
-            discount="30% OFF"
-            department="Tênis"
-            description="K-Swiss V8 - Masculino"
-            fullPrice="$200"
-            discountedPrice="$100"
-          />
-          <Card
-            image={CardImage}
-            style={{ display: "none" }}
-            discount=""
-            department="Tênis"
-            description="K-Swiss V8 - Masculino"
-            fullPrice="$200"
-            discountedPrice="$100"
-          />
-          <Card
-            image={CardImage}
-            style={{ display: "none" }}
-            discount=""
-            department="Tênis"
-            description="K-Swiss V8 - Masculino"
-            fullPrice="$200"
-            discountedPrice="$100"
-          />
-          <Card
-            image={CardImage}
-            style={{ display: "none" }}
-            discount=""
-            department="Tênis"
-            description="K-Swiss V8 - Masculino"
-            fullPrice="$200"
-            discountedPrice="$100"
-          />
-          <Card
-            image={CardImage}
-            style={{ display: "none" }}
-            discount=""
-            department="Tênis"
-            description="K-Swiss V8 - Masculino"
-            fullPrice="$200"
-            discountedPrice="$100"
-          />
-          <Card
-            image={CardImage}
-            style={{ display: "none" }}
-            discount=""
-            department="Tênis"
-            description="K-Swiss V8 - Masculino"
-            fullPrice="$200"
-            discountedPrice="$100"
-          />
+            ))
+          }
         </div>
       </section>
     </>

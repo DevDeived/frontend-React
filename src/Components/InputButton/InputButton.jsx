@@ -1,4 +1,4 @@
-import "InputButton.css"
+import "./InputButton.css"
 
 function InputButton(props) {
 
