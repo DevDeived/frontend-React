@@ -54,12 +54,12 @@ function CarrinhoBody() {
                         </div>
 
                         <div id="coluna-unitario">
-                            <div class="taxado">R$ 219,00</div>
+                            <div class="taxado">R$ 189,99</div>
                             <div class="preco"><h4>R$ 219,00</h4></div>
                         </div>
                         <div id="coluna-total">
-                            <div class="taxado">R$ 219,00</div>
-                            <div class="preco"><h4>R$ 219,00</h4></div>
+                            <div class="taxado">R$ {count*189.99.toFixed(2)}</div>
+                            <div class="preco"><h4>R${count*219.99.toFixed(2)}</h4></div>
                         </div>
                     </div>
 
@@ -93,8 +93,8 @@ function CarrinhoBody() {
                         <div id="resumo-valores-lateral">
                             <h5>R$ 219,00</h5>
                             <h5>R$ 0,00</h5>
-                            <h5>R$ 30,00</h5>
-                            <h4 id="total-valor">R$ 219,00</h4>
+                            <h5>R$ {count*30.00.toFixed(2)}</h5>
+                            <h4 id="total-valor">R$ {count*219.99.toFixed(2)}</h4>
                             <h6 id="parcelamento-total">ou 10x de R$21,00 sem juros</h6>
                         </div>
                     </div>
