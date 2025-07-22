@@ -8,6 +8,7 @@ import ConfimacaoComprapage from "./Pages/ConfimacaoComprapage";
 import DetalhesProdutosPage from "./Pages/DetalheProdutoPage";
 import CriarContaPage from "./Pages/CriarContaPage";
 import Pedidos from "./Pages/Pedidos"
+import Teste from "./Pages/Teste"
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/criarConta" element={<CriarContaPage />} />
           <Route path="/produtos" element={<DetalhesProdutosPage />} />
           <Route path="/pedidos" element={<Pedidos/>}/>
+          <Route path="/teste" element={<Teste/>}/>
       </Routes>
     </BrowserRouter>
     </>
