@@ -13,6 +13,9 @@ function DetalhesProdutosPage() {
   const [ordenacao, setOrdenacao] = useState("");
   const [pagina, setPagina] = useState(1);
 
+  const [totalPages, setTotalPages] = useState(1);
+
+  // Atualiza filtros
   const handleFiltroChange = (tipo, valor, checked) => {
     setFiltros((prev) => {
       const valores = new Set(prev[tipo]);
@@ -21,6 +24,20 @@ function DetalhesProdutosPage() {
       return { ...prev, [tipo]: Array.from(valores) };
     });
     setPagina(1);
+  };
+
+  // Atualiza total de páginas quando ProdutosEmAltas muda
+  const handleTotalPagesChange = (total) => {
+    setTotalPages(total);
+  };
+
+  // Paginação
+  const handleNextPage = () => {
+    if (pagina < totalPages) setPagina((prev) => prev + 1);
+  };
+
+  const handlePrevPage = () => {
+    if (pagina > 1) setPagina((prev) => prev - 1);
   };
 
   return (
@@ -93,11 +110,27 @@ function DetalhesProdutosPage() {
           </div>
         </aside>
 
-        <ProdutosEmAltas
-          filtros={filtros}
-          ordenacao={ordenacao}
-          pagina={pagina}
-        />
+        <div className="produtos-com-paginacao">
+          <ProdutosEmAltas
+            filtros={filtros}
+            ordenacao={ordenacao}
+            pagina={pagina}
+            onTotalPagesChange={handleTotalPagesChange} // recebe totalPages do componente
+          />
+
+          {/* Paginação */}
+          <div className="paginacao">
+            <button onClick={handlePrevPage} disabled={pagina === 1}>
+              {"<"} Anterior
+            </button>
+            <span>
+              Página {pagina} de {totalPages}
+            </span>
+            <button onClick={handleNextPage} disabled={pagina === totalPages}>
+              Próxima {">"}
+            </button>
+          </div>
+        </div>
       </div>
       <Footer />
     </>

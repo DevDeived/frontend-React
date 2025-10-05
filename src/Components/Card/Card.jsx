@@ -1,27 +1,25 @@
 import "./Card.css";
 
-function Card(props) {
+function Card({ image, estilo, desconto, departamento, descricao, precoOriginal, precoComDesconto }) {
   return (
-    <div id="image">
-      <div className="containerImage">
+    <div className="card">
+      <div className="containerImagem">
         <img
-          id="imageCard"
-          src={props.image || "https://via.placeholder.com/200"}
-          alt={props.description}
+          className="imagemCard"
+          src={image || "https://via.placeholder.com/200"}
+          alt={descricao}
         />
-        <div
-          className="divVerde"
-          style={{ backgroundColor: props.style || "#e7ff86" }}
-        >
-          <p>{props.discount || ""}</p>
-        </div>
+        {desconto && (
+          <div className="divVerde" style={{ backgroundColor: estilo || "#e7ff86" }}>
+            <p>{desconto}%</p>
+          </div>
+        )}
       </div>
-      <div className="containerTitles">
-        <span>{props.department}</span>
-        <p>{props.description}</p>
+      <div className="containerTitulos">
+        <span>{departamento}</span>
+        <p>{descricao}</p>
         <strong>
-          <span id="fullprice">R$ {props.fullPrice}</span> R${" "}
-          {props.discountedPrice}
+          <span className="precoOriginal">R$ {precoOriginal}</span> R$ {precoComDesconto}
         </strong>
       </div>
     </div>

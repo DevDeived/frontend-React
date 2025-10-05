@@ -1,17 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-*{
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
   font-family: "Inter", sans-serif;
-
 }
 #produto {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 1.5rem;
   flex: 1;
-  
 }
 .layoutProdutos {
   display: flex;
@@ -20,16 +17,15 @@
   align-items: flex-start;
 }
 
-h1{
+h1 {
   color: #474747;
   margin-bottom: 20px;
   padding-left: 2vw;
   margin-top: 5vh;
 }
 
-#produtoImg{
+#produtoImg {
   width: 100%;
-  height: 80vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   background-color: #f5f5f5;
@@ -44,9 +40,7 @@ h1{
   transition: filter 0.3s ease;
   transition: box-shadow 0.3s ease;
   overflow-y: hidden;
-  
 }
-
 
 .produtos-em-altas {
   display: grid;
@@ -63,7 +57,7 @@ h1{
   border-radius: 8px;
   padding: 1rem;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   position: relative;
 }
 
@@ -74,7 +68,6 @@ h1{
   padding: 1vw;
   transition: all 0.3s ease;
 }
-
 
 .tag-desconto {
   position: absolute;
@@ -111,13 +104,12 @@ h1{
   color: black;
   font-weight: bold;
 }
-#image{
+#image {
   width: 19vw;
-
 }
-.divVerde{
-  width: 5vw;
-  
+.divVerde {
+  width: 8vw;
+  height: 5vh;
   background-color: #e7ff86;
   border-radius: 15px;
   display: flex;
@@ -125,42 +117,28 @@ h1{
   justify-content: center;
   position: absolute;
   margin-top: 3vh;
-  margin-left: 2vw;
 }
 .divVerde p {
-  width: 4vw;
-  height: 6vh;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 700;
-  padding: auto;
- 
 }
-.containerImage{
+.containerImage {
   display: flex;
   align-items: start;
   justify-content: flex-start;
-
 }
-.containerImage img{
-  height: 35vh;
-}
-.containerTitles{
+.containerTitles {
   display: flex;
   align-items: start;
   flex-direction: column;
   gap: 1.2vh;
-
 }
-.containerTitles span{
+.containerTitles span {
   color: gray;
   font-size: 10px;
   font-weight: 700;
 }
-#fullprice{
+#fullprice {
   color: gray;
   font-size: 16px;
   font-weight: normal;
