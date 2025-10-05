@@ -24,7 +24,7 @@ function App() {
           <Route path="/CreatAccont" element={<CreatAccontpage/>} />
           <Route path="/confirmacao" element={<ConfimacaoComprapage />} />
           <Route path="/criarConta" element={<CriarContaPage />} />
-          <Route path="/produtos" element={<DetalhesProdutosPage />} />
+          <Route path="/produto" element={<DetalhesProdutosPage />} />
           <Route path="/pedidos" element={<Pedidos/>}/>
           <Route path="/teste" element={<Teste/>}/>
       </Routes>

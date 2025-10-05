@@ -1,44 +1,104 @@
+import { useState } from "react";
 import Footer from "../Components/Footer/Footer";
 import Header from "../Components/HeaderHome/Header";
 import ProdutosEmAltas from "../Components/ProdutosEmAltas/ProdutosEmAltas";
-import "./DetalheProdutoPage.css"
+import "./DetalheProdutoPage.css";
 
 function DetalhesProdutosPage() {
+  const [filtros, setFiltros] = useState({
+    marca: [],
+    categoria: [],
+    genero: [],
+  });
+  const [ordenacao, setOrdenacao] = useState("");
+  const [pagina, setPagina] = useState(1);
+
+  const handleFiltroChange = (tipo, valor, checked) => {
+    setFiltros((prev) => {
+      const valores = new Set(prev[tipo]);
+      if (checked) valores.add(valor);
+      else valores.delete(valor);
+      return { ...prev, [tipo]: Array.from(valores) };
+    });
+    setPagina(1);
+  };
+
   return (
     <>
       <Header />
-
       <div className="layoutProdutos">
         <aside className="filtros">
           <h3>Filtrar por</h3>
 
           <div className="filtro">
             <strong>Marca</strong>
-            <label><input type="checkbox" defaultChecked /> Addidas</label>
-            <label><input type="checkbox" /> Calenciaga</label>
-            <label><input type="checkbox" defaultChecked /> K-Swiss</label>
-            <label><input type="checkbox" /> Nike</label>
-            <label><input type="checkbox" /> Puma</label>
+            {["Addidas", "Calenciaga", "K-Swiss", "Nike", "Puma"].map(
+              (m, i) => (
+                <label key={m}>
+                  <input
+                    type="checkbox"
+                    onChange={(e) =>
+                      handleFiltroChange("marca", i + 1, e.target.checked)
+                    }
+                    defaultChecked={i === 0 || i === 2}
+                  />
+                  {m}
+                </label>
+              )
+            )}
           </div>
 
           <div className="filtro">
             <strong>Categoria</strong>
-            <label><input type="checkbox" defaultChecked /> Esporte e lazer</label>
-            <label><input type="checkbox" /> Casual</label>
-            <label><input type="checkbox" /> Utilitário</label>
-            <label><input type="checkbox" /> Corrida</label>
+            {["Esporte e lazer", "Casual", "Utilitário", "Corrida"].map(
+              (c, i) => (
+                <label key={c}>
+                  <input
+                    type="checkbox"
+                    onChange={(e) =>
+                      handleFiltroChange("categoria", i + 1, e.target.checked)
+                    }
+                    defaultChecked={i === 0}
+                  />
+                  {c}
+                </label>
+              )
+            )}
           </div>
 
           <div className="filtro">
             <strong>Gênero</strong>
-            <label><input type="checkbox" defaultChecked /> Masculino</label>
-            <label><input type="checkbox" /> Feminino</label>
-            <label><input type="checkbox" /> Unisex</label>
+            {["Masculino", "Feminino", "Unisex"].map((g) => (
+              <label key={g}>
+                <input
+                  type="checkbox"
+                  onChange={(e) =>
+                    handleFiltroChange("genero", g.charAt(0), e.target.checked)
+                  }
+                  defaultChecked={g === "Masculino"}
+                />
+                {g}
+              </label>
+            ))}
+          </div>
+
+          <div className="filtro">
+            <strong>Ordenar</strong>
+            <select onChange={(e) => setOrdenacao(e.target.value)}>
+              <option value="">Padrão</option>
+              <option value="preco_asc">Preço crescente</option>
+              <option value="preco_desc">Preço decrescente</option>
+              <option value="lancamento">Mais novos</option>
+            </select>
           </div>
         </aside>
-        <ProdutosEmAltas />
+
+        <ProdutosEmAltas
+          filtros={filtros}
+          ordenacao={ordenacao}
+          pagina={pagina}
+        />
       </div>
-      
       <Footer />
     </>
   );

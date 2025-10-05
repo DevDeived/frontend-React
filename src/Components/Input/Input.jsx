@@ -6,7 +6,7 @@ function Input(props) {
     <>
         <div class="campospreench">
             <label class="textsp" htmlFor="">{props.label}</label>
-            <input type={props.type} name="" placeholder={props.placeholder} id="camposplace" />
+            <input onChange={props.onChange} value={props.value} type={props.type} name="" placeholder={props.placeholder} id="camposplace" />
         </div>
     </>
   )

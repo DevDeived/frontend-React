@@ -1,40 +1,45 @@
 import "./ProdutosEmAltas.css";
 import Card from "../Card/Card";
-import {useState,useEffect} from "react";
+
+import { useState, useEffect } from "react";
 
 function ProdutosEmAltas() {
   const [data,setData] = useState([])
 
   useEffect(() => {
     async function getData() {
-      let response = await fetch("https://68759a5f814c0dfa6538eef2.mockapi.io/api/Produtos")
+      let response = await fetch("http://localhost:3000/api/produto")
       let data = await response.json()
       setData(data)
     }
     getData();
   }, []);
-  console.log(data)
+  
   return (
     <>
       <section id="produtos">
-        <h1>Produtos em alta</h1>
-        <div id="produtoImg">
-          {
-            data.map((produto) => (
-            <Card
+  <h1>Produtos em alta</h1>
+  <div id="produtoImg">
+    {
+      data?.data?.length > 0 ? (
+        data.data.map((produto) => (
+          <Card
             key={produto.id}
-            image={produto.image}
-            style={produto.style}
-            discount={produto.discount}
-            department={produto.department}
-            description={produto.description}
-            fullPrice={produto.fullPrice}
-            discountedPrice={produto.discountedPrice}
+            image={`http://localhost:3000/${produto.image}`}
+            style={produto.estilo}
+            discount={produto.desconto}
+            department={produto.departamento}
+            description={produto.descricao}
+            fullPrice={produto.precoOriginal}
+            discountedPrice={produto.precoComDesconto}
           />
-            ))
-          }
-        </div>
-      </section>
+        ))
+      ) : (
+        <p>Nenhum produto encontrado.</p>
+      )
+    }
+  </div>
+</section>
     </>
   );
 }

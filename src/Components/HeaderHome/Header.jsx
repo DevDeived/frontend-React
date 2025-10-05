@@ -1,6 +1,6 @@
 import Logo from "../../assets/logo.png";
-import {FaShoppingCart} from 'react-icons/fa';
-import "./Header.css"
+import { FaShoppingCart } from "react-icons/fa";
+import "./Header.css";
 
 function Header() {
   return (
@@ -11,16 +11,25 @@ function Header() {
           <input type="text" placeholder="Pesquisar produto..." />
           <a href="CreateCount">Cadastre-se</a>
           <button>Entrar</button>
-          <p><FaShoppingCart /></p>
+          <p>
+            <FaShoppingCart />
+          </p>
         </div>
 
         <div id="headerNav">
           <ul id="headerlist">
-            <a href="/"><li>Home</li></a>
-            <a href="Produtos"><li>Produtos</li></a>
-            <a href=""><li>Categoria</li></a>
-            <a href="pedidos"><li>Meus Pedidos</li></a>
-          
+            <a href="/">
+              <li>Home</li>
+            </a>
+            <a href="Produto">
+              <li>Produtos</li>
+            </a>
+            <a href="">
+              <li>Categoria</li>
+            </a>
+            <a href="pedidos">
+              <li>Meus Pedidos</li>
+            </a>
           </ul>
         </div>
       </section>
