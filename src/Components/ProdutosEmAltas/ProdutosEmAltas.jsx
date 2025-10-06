@@ -1,19 +1,26 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom"; // 👈 para navegação
 import "./ProdutosEmAltas.css";
 
-function ProdutosEmAltas({ filtros, ordenacao, pagina }) {
+function ProdutosEmAltas({ filtros = { marca: [], categoria: [], genero: [] }, ordenacao, pagina }) {
   const [produtos, setProdutos] = useState([]);
   const [setTotalPages] = useState(1);
+  const navigate = useNavigate(); // 👈 cria função de navegação
 
   useEffect(() => {
     const fetchProdutos = async () => {
       try {
+        if (!filtros) return;
+
         const params = new URLSearchParams();
 
-        // Adiciona filtros
-        if (filtros.marca.length) filtros.marca.forEach(m => params.append("marca_id", m));
-        if (filtros.categoria.length) filtros.categoria.forEach(c => params.append("categoria_id", c));
-        if (filtros.genero.length) filtros.genero.forEach(g => params.append("genero", g));
+        // Filtros
+        if (Array.isArray(filtros.marca) && filtros.marca.length)
+          filtros.marca.forEach((m) => params.append("marca_id", m));
+        if (Array.isArray(filtros.categoria) && filtros.categoria.length)
+          filtros.categoria.forEach((c) => params.append("categoria_id", c));
+        if (Array.isArray(filtros.genero) && filtros.genero.length)
+          filtros.genero.forEach((g) => params.append("genero", g));
 
         // Ordenação e página
         if (ordenacao) params.append("sort", ordenacao);
@@ -36,9 +43,17 @@ function ProdutosEmAltas({ filtros, ordenacao, pagina }) {
     <div id="produtoImg">
       {produtos.length > 0 ? (
         produtos.map((produto) => (
-          <div className="card-produto" key={produto.id}>
+          <div
+            className="card-produto"
+            key={produto.id}
+            onClick={() => navigate(`/produto/${produto.id}`)} // 👈 ao clicar, vai para a página do produto
+          >
             <div className="containerImage">
-              <img src={`http://localhost:3000/${produto.imagem}`} alt={produto.nome} />
+              <img
+                src={`http://localhost:3000/${produto.imagem}`}
+                alt={produto.nome}
+                className="img-produto"
+              />
               {produto.promocao?.nome && (
                 <div className="tag-desconto">{produto.promocao.nome}</div>
               )}
@@ -47,7 +62,6 @@ function ProdutosEmAltas({ filtros, ordenacao, pagina }) {
             <span className="categoria">{produto.categoria?.nome}</span>
             <h3>{produto.nome}</h3>
             <p>{produto.descricao}</p>
-            <span>Avaliação: {produto.avaliacao}</span>
 
             <div className="preco">
               {produto.precoOriginal && (
@@ -57,8 +71,6 @@ function ProdutosEmAltas({ filtros, ordenacao, pagina }) {
             </div>
 
             <span>Marca: {produto.marca?.nome}</span>
-            <span>Gênero: {produto.genero}</span>
-            <span>Tamanho: {produto.tamanho} | Cor: {produto.cor}</span>
           </div>
         ))
       ) : (
