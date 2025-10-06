@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Footer from "../Components/Footer/Footer";
 import Header from "../Components/HeaderHome/Header";
 import ProdutosEmAltas from "../Components/ProdutosEmAltas/ProdutosEmAltas";
@@ -12,8 +12,34 @@ function DetalhesProdutosPage() {
   });
   const [ordenacao, setOrdenacao] = useState("");
   const [pagina, setPagina] = useState(1);
-
   const [totalPages, setTotalPages] = useState(1);
+  const [marcas, setMarcas] = useState([]);
+
+  // Fetch marcas from API
+  useEffect(() => {
+    const fetchMarcas = async () => {
+      try {
+        const response = await fetch("http://localhost:3000/api/marca");
+        if (!response.ok) {
+          throw new Error("Failed to fetch marcas");
+        }
+        const data = await response.json();
+        setMarcas(data); // Expecting [{ id: number, nome: string }, ...]
+      } catch (error) {
+        console.error("Error fetching marcas:", error);
+        // Fallback to static list if API fails
+        setMarcas([
+          { id: 1, nome: "Addidas" },
+          { id: 2, nome: "Calenciaga" },
+          { id: 3, nome: "K-Swiss" },
+          { id: 4, nome: "Nike" },
+          { id: 5, nome: "Puma" },
+        ]);
+      }
+    };
+
+    fetchMarcas();
+  }, []);
 
   // Atualiza filtros
   const handleFiltroChange = (tipo, valor, checked) => {
@@ -49,20 +75,18 @@ function DetalhesProdutosPage() {
 
           <div className="filtro">
             <strong>Marca</strong>
-            {["Addidas", "Calenciaga", "K-Swiss", "Nike", "Puma"].map(
-              (m, i) => (
-                <label key={m}>
-                  <input
-                    type="checkbox"
-                    onChange={(e) =>
-                      handleFiltroChange("marca", i + 1, e.target.checked)
-                    }
-                    defaultChecked={i === 0 || i === 2}
-                  />
-                  {m}
-                </label>
-              )
-            )}
+            {marcas.map((m, i) => (
+              <label key={m.id || m.nome}>
+                <input
+                  type="checkbox"
+                  onChange={(e) =>
+                    handleFiltroChange("marca", m.id || i + 1, e.target.checked)
+                  }
+                  defaultChecked={i === 0 || i === 2}
+                />
+                {m.nome}
+              </label>
+            ))}
           </div>
 
           <div className="filtro">
@@ -115,7 +139,7 @@ function DetalhesProdutosPage() {
             filtros={filtros}
             ordenacao={ordenacao}
             pagina={pagina}
-            onTotalPagesChange={handleTotalPagesChange} // recebe totalPages do componente
+            onTotalPagesChange={handleTotalPagesChange}
           />
 
           {/* Paginação */}
