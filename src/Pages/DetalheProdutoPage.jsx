@@ -14,6 +14,7 @@ function DetalhesProdutosPage() {
   const [pagina, setPagina] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const [marcas, setMarcas] = useState([]);
+  const [categorias, setCategorias] = useState([]);
 
   // Fetch marcas from API
   useEffect(() => {
@@ -38,7 +39,28 @@ function DetalhesProdutosPage() {
       }
     };
 
+    const fetchCategorias = async () => {
+      try {
+        const response = await fetch("http://localhost:3000/api/categoria");
+        if (!response.ok) {
+          throw new Error("Failed to fetch categorias");
+        }
+        const data = await response.json();
+        setCategorias(data); // Expecting [{ id: number, nome: string }, ...]
+      } catch (error) {
+        console.error("Error fetching categorias:", error);
+        // Fallback to static list if API fails
+        setCategorias([
+          { id: 1, nome: "Esporte e lazer" },
+          { id: 2, nome: "Casual" },
+          { id: 3, nome: "Utilitário" },
+          { id: 4, nome: "Corrida" },
+        ]);
+      }
+    };
+
     fetchMarcas();
+    fetchCategorias();
   }, []);
 
   // Atualiza filtros
@@ -82,7 +104,6 @@ function DetalhesProdutosPage() {
                   onChange={(e) =>
                     handleFiltroChange("marca", m.id || i + 1, e.target.checked)
                   }
-                  defaultChecked={i === 0 || i === 2}
                 />
                 {m.nome}
               </label>
@@ -91,20 +112,17 @@ function DetalhesProdutosPage() {
 
           <div className="filtro">
             <strong>Categoria</strong>
-            {["Esporte e lazer", "Casual", "Utilitário", "Corrida"].map(
-              (c, i) => (
-                <label key={c}>
-                  <input
-                    type="checkbox"
-                    onChange={(e) =>
-                      handleFiltroChange("categoria", i + 1, e.target.checked)
-                    }
-                    defaultChecked={i === 0}
-                  />
-                  {c}
-                </label>
-              )
-            )}
+            {categorias.map((c, i) => (
+              <label key={c.id || c.nome}>
+                <input
+                  type="checkbox"
+                  onChange={(e) =>
+                    handleFiltroChange("categoria", c.id || i + 1, e.target.checked)
+                  }
+                />
+                {c.nome}
+              </label>
+            ))}
           </div>
 
           <div className="filtro">
@@ -116,7 +134,6 @@ function DetalhesProdutosPage() {
                   onChange={(e) =>
                     handleFiltroChange("genero", g.charAt(0), e.target.checked)
                   }
-                  defaultChecked={g === "Masculino"}
                 />
                 {g}
               </label>
